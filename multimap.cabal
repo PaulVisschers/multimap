@@ -1,0 +1,14 @@
+﻿Name:                multimap
+Version:             0.1
+Synopsis:            A variant of Data.Map that allows multiple items with the same key and/or value.
+Category:            Data Structures
+Author:              Paul Visschers
+Build-Type:          Simple
+Cabal-Version:       >=1.6.0.1
+Stability:           experimental
+
+
+Library
+  HS-Source-Dirs:    src
+  Build-Depends:     base == 4.*
+  Exposed-Modules:   Data.MultiMap
