@@ -10,5 +10,5 @@ Stability:           experimental
 
 Library
   HS-Source-Dirs:    src
-  Build-Depends:     base == 4.*
+  Build-Depends:     base == 4.*, containers == 0.4.*
   Exposed-Modules:   Data.MultiMap
