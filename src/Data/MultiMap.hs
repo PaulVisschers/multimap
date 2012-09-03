@@ -18,5 +18,5 @@ keyCount = M.size . unMulti
 insert :: (Ord k, Ord a) => k -> a -> MultiMap k a -> MultiMap k a
 insert k x (Multi m) = Multi $ M.insert k (S.insert x $ M.findWithDefault S.empty k m) m
 
-toList :: MultiMap k a -> [(k, a)]
-toList = concatMap (\(k, xs) -> map (k,) (S.toList xs)) . M.toList . unMulti
+assocs :: MultiMap k a -> [(k, a)]
+assocs = concatMap (\(k, xs) -> map (k,) (S.toList xs)) . M.toList . unMulti
